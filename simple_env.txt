@@ -1,0 +1,9 @@
+# нужно создать файл .env и добавить в текущию директорию
+DBNAME=''
+USER=''
+PASSWORD=''
+HOST=''
+PORT=''
+BOT_URL=''
+CHAT_ID=''
+
