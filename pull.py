@@ -3,7 +3,6 @@ from psycopg2 import pool
 
 
 class DatabaseConnectionPull:
-    # Объявляем статический атрибут connection_pool и инициализируем его значением None
     connection_pool = None
 
     def __init__(self):
@@ -33,7 +32,6 @@ class DatabaseConnectionPull:
         return self.cursor
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        # Закрываем курсор
         if self.cursor is not None:
             self.cursor.close()
 

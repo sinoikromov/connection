@@ -13,7 +13,8 @@
 
 # Пример Исползование
 ```python
-with DatabaseConnection() as conn:
-     connections.append(conn)
-     conn.execute("SELECT version()")
+with MyProjectDatabaseConnection() as cursor:
+    cursor.execute("SELECT version())")
+    version = cursor.fetchone()
+    print("PostgreSQL version:", version[0])
 ```

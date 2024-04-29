@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     port: str = environ.get('PORT', '5432')
     bot_url: str = environ.get('BOT_URL', '')
     telegram_chat_id: str = environ.get('CHAT_ID', '')
+    IN_PROD: str = environ.get('IN_PROD', '0')
 
 
 settings = Settings()
